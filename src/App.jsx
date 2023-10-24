@@ -6,13 +6,13 @@ import bg from "./assets/intro-component-with-signup-form-master/images/bg-intro
 function App() {
   return (
     <>
-      <main className="min-h-screen w-full overflow-hidden flex justify-center items-center">
+      <main className="min-h-screen w-full lg:overflow-hidden flex justify-center items-center relative">
         <img
           src={bg}
           alt="background"
-          className="absolute bg-[#ff7c7c] w-full h-full -z-10"
+          className="absolute bg-[#ff7c7c] h-[80rem] lg:w-full lg:h-full -z-10"
         />
-        <div className="w-[1440px] h-[770px] relative font-Poppins flex flex-row">
+        <div className="w-[1440px] h-[770px] relative font-Poppins flex flex-col lg:flex-row">
           <LeftAside />
           <RightAside />
         </div>
