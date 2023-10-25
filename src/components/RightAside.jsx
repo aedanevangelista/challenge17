@@ -61,7 +61,7 @@ const RightAside = () => {
       </button>
       <form
         onSubmit={handleSubmit}
-        className="bg-white flex flex-col py-8 px-6 lg:py-6 mb-12 lg:mb-0 lg:p-10 rounded-xl shadow-lg shadow-gray-900/50"
+        className="bg-white flex flex-col py-8 px-6 mb-12 lg:mb-0 lg:p-10 rounded-xl shadow-lg shadow-gray-900/50"
       >
         <div class="relative">
           {errors.firstName && (
