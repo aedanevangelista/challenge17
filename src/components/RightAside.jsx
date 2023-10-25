@@ -53,7 +53,7 @@ const RightAside = () => {
 
   return (
     <div className="lg:w-1/2 font-[600] flex flex-col lg:pr-28 justify-center px-8">
-      <button className="bg-[#6054a4] text-white px-16 lg:px-0 py-5 rounded-lg my-8 shadow-lg shadow-gray-900/50 focus:scale-105 hover:scale-105 duration-300 outline-none">
+      <button className="bg-[#6054a4] text-white px-16 lg:px-0 py-5 rounded-lg my-8 shadow-lg shadow-gray-900/50 hover:scale-105 duration-300 outline-none">
         Try it free 7 days{" "}
         <span className="font-[400] text-gray-300">
           then $20/mo. thereafter
