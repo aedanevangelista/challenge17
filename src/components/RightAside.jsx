@@ -39,6 +39,9 @@ const RightAside = () => {
       validationErrors.password = "Password is required.";
     } else if (formData.password.length < 6) {
       validationErrors.password = "Password should be more than 6 characters.";
+    } else if (formData.password.length >= 16) {
+      validationErrors.password =
+        "Password should not be more than 16 characters.";
     }
 
     setErrors(validationErrors);
@@ -58,7 +61,7 @@ const RightAside = () => {
       </button>
       <form
         onSubmit={handleSubmit}
-        className="bg-white flex flex-col p-6 mb-12 lg:mb-0 lg:p-10 rounded-xl shadow-lg shadow-gray-900/50"
+        className="bg-white flex flex-col py-8 px-6 lg:py-6 mb-12 lg:mb-0 lg:p-10 rounded-xl shadow-lg shadow-gray-900/50"
       >
         <div class="relative">
           {errors.firstName && (
@@ -68,16 +71,17 @@ const RightAside = () => {
           )}
           <input
             type="text"
-            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 peer-focus:mb-0 duration-300 outline-none peer"
+            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 peer-focus:mb-0 duration-300 outline-none peer placeholder-transparent"
             id="firstName"
             name="firstName"
             autoComplete="off"
             onChange={handleChange}
+            placeholder="First Name"
           />
 
           <label
             htmlFor="firstName"
-            className="absolute transition-all peer-focus:-top-3 peer-focus:left-1 left-5 top-4 bg-white px-4 cursor-text text-gray-500"
+            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             First Name <span className="text-red-500">*</span>
           </label>
@@ -90,15 +94,16 @@ const RightAside = () => {
 
           <input
             type="text"
-            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 duration-300 outline-none peer"
+            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 peer-focus:mb-0 duration-300 outline-none peer placeholder-transparent"
             id="lastName"
             name="lastName"
             autoComplete="off"
             onChange={handleChange}
+            placeholder="Last Name"
           />
           <label
             htmlFor="lastName"
-            className="absolute transition-all peer-focus:-top-3 peer-focus:left-1 left-5 top-4 bg-white px-4 cursor-text text-gray-500"
+            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Last Name <span className="text-red-500">*</span>
           </label>
@@ -110,15 +115,16 @@ const RightAside = () => {
           </p>
           <input
             type="email"
-            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 duration-300 outline-none peer"
+            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 peer-focus:mb-0 duration-300 outline-none peer placeholder-transparent"
             id="email"
             name="email"
             autoComplete="off"
             onChange={handleChange}
+            placeholder="email"
           />
           <label
             htmlFor="email"
-            className="absolute transition-all peer-focus:-top-3 peer-focus:left-1 left-5 top-4 bg-white px-4 cursor-text text-gray-500"
+            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Email Address <span className="text-red-500">*</span>
           </label>
@@ -130,15 +136,16 @@ const RightAside = () => {
           </p>
           <input
             type="password"
-            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 duration-300 outline-none peer"
+            className="w-full px-8 py-4 border border-gray-300 rounded-md mb-8 peer-focus:mb-0 duration-300 outline-none peer placeholder-transparent"
             id="password"
             name="password"
             autoComplete="off"
             onChange={handleChange}
+            placeholder="password"
           />
           <label
             htmlFor="password"
-            className="absolute transition-all peer-focus:-top-3 peer-focus:left-1 left-5 top-4 bg-white px-4 cursor-text text-gray-500"
+            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Password <span className="text-red-500">*</span>
           </label>
