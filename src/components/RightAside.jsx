@@ -81,7 +81,7 @@ const RightAside = () => {
 
           <label
             htmlFor="firstName"
-            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
+            className=" select-none absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             First Name <span className="text-red-500">*</span>
           </label>
@@ -103,7 +103,7 @@ const RightAside = () => {
           />
           <label
             htmlFor="lastName"
-            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
+            className=" select-none absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Last Name <span className="text-red-500">*</span>
           </label>
@@ -124,7 +124,7 @@ const RightAside = () => {
           />
           <label
             htmlFor="email"
-            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
+            className=" select-none absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Email Address <span className="text-red-500">*</span>
           </label>
@@ -145,7 +145,7 @@ const RightAside = () => {
           />
           <label
             htmlFor="password"
-            className="absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
+            className=" select-none absolute transition-all -top-3 left-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:left-4 px-3 bg-white cursor-text text-sm text-gray-500 peer-focus:bg-white peer-focus:-top-3 peer-focus:left-1 peer-focus:text-gray-600 peer-focus:text-sm"
           >
             Password <span className="text-red-500">*</span>
           </label>
